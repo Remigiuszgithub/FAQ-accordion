@@ -93,8 +93,10 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top;
+        algin-items: flex-start;
     }
     .main {
         width: 90%;
+        margin-top: 2rem;
     }
 }
