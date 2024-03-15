@@ -23,7 +23,6 @@ body {
     background-size: contain;
     background-position: top;
     background-color: var(--light-pink);
-    overflow-y: scroll;
 }
 .main {
     display: flex;
@@ -87,15 +86,18 @@ body {
 .arttitle.active .accordion-icon-minus {
     display: inline;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px){
     body {
+        background-image: url(assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
         align-items: flex-start;
-        justify-content: center;
-        height: auto;
+        padding-bottom: 8rem;
+        min-height: calc(100vh + 8rem);
     }
-
     .main {
         width: 90%;
-        margin-top: 2rem;
+        margin: 8rem auto;
     }
 }

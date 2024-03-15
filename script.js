@@ -17,5 +17,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 accordionIconMinus.style.display = 'none';
             }
         });
+
+        // Dodaj tę sekcję, aby ukryć ikony plus/minus na początku
+        const accordionContent = title.nextElementSibling;
+        const accordionIconPlus = title.querySelector('.accordion-icon-plus');
+        const accordionIconMinus = title.querySelector('.accordion-icon-minus');
+
+        if (accordionContent.classList.contains('active')) {
+            accordionIconPlus.style.display = 'none';
+            accordionIconMinus.style.display = 'inline';
+        } else {
+            accordionIconPlus.style.display = 'inline';
+            accordionIconMinus.style.display = 'none';
+        }
     });
 });
