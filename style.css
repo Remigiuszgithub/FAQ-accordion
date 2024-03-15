@@ -92,10 +92,9 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top;
-        align-items: flex-start;
     }
     .main {
         width: 90%;
-        margin-top: 0 auto;
+        top: 10px;
     }
 }
