@@ -87,15 +87,15 @@ body {
 .arttitle.active .accordion-icon-minus {
     display: inline;
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
     body {
-        background-image: url(assets/images/background-pattern-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: top;
+        align-items: flex-start;
+        justify-content: center;
         height: auto;
     }
+
     .main {
         width: 90%;
+        margin-top: 10px;
     }
 }
